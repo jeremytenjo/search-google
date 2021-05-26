@@ -10,7 +10,7 @@ module.exports = async function handleRequestToSearch() {
     }
   })
 
-  if (!searchQuery) return null
+  if (!searchQuery) return
 
   vscode.env.openExternal(
     vscode.Uri.parse(`https://www.google.com/search?q=${searchQuery}`)
