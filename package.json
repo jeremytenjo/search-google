@@ -3,7 +3,7 @@
 	"displayName": "Search Google",
 	"description": "Search google quickly",
 	"publisher": "tenjojeremy",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"engines": {
 		"vscode": "^1.55.0"
 	},
