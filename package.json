@@ -34,7 +34,7 @@
 					"type": "boolean",
 					"default": false,
 					"description": "Disable extension"
-				},
+				}
 			}
 		}
 	},
