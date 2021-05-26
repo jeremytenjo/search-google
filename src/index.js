@@ -1,12 +1,19 @@
+const vscode = require('vscode')
+
 const handleRequestToSearch = require('./handleRequestToSearch')
 const pkgJson = require('../package.json')
 
 /**
  * @param {vscode.ExtensionContext} context
  */
-function activate() {
+function activate(context) {
   console.log(`${pkgJson.name} activated!`)
-  handleRequestToSearch()
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      'searchGoogle.searchGoogle',
+      handleRequestToSearch
+    )
+  )
 }
 
 // this method is called when your extension is deactivated
