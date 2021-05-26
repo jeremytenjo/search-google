@@ -11,7 +11,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onStartupFinished"
+		"onCommand:searchGoogle.searchGoogle"
 	],
 	"main": "./src/index.js",
 	"scripts": {
@@ -27,16 +27,12 @@
 		"url": "https://github.com/jeremytenjo/search-google"
 	},
 	"contributes": {
-		"configuration": {
-			"title": "searchGoogle",
-			"properties": {
-				"searchGoogle.disable": {
-					"type": "boolean",
-					"default": false,
-					"description": "Disable extension"
-				}
+		"commands": [
+			{
+				"command": "searchGoogle.searchGoogle",
+				"title": "Search Google"
 			}
-		}
+		]
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.55.0",
@@ -48,9 +44,5 @@
 		"mocha": "^8.2.1",
 		"typescript": "^4.1.3",
 		"vscode-test": "^1.5.0"
-	},
-	"dependencies": {
-		"change-case": "^4.1.2",
-		"os": "^0.1.1"
 	}
 }

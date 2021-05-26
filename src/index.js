@@ -1,4 +1,4 @@
-const handleFolderCreation = require('./handleFolderCreation')
+const handleRequestToSearch = require('./handleRequestToSearch')
 const pkgJson = require('../package.json')
 
 /**
@@ -6,7 +6,7 @@ const pkgJson = require('../package.json')
  */
 function activate() {
   console.log(`${pkgJson.name} activated!`)
-  handleFolderCreation()
+  handleRequestToSearch()
 }
 
 // this method is called when your extension is deactivated
