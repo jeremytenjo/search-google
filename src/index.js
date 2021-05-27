@@ -1,5 +1,4 @@
 const vscode = require('vscode')
-
 const handleRequestToSearch = require('./handleRequestToSearch')
 const pkgJson = require('../package.json')
 
