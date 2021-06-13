@@ -1,5 +1,5 @@
-# Install NPM packages
+# Search Google
 
-Quickly Install and uninstall NPM packages
+Quickly search google
 
-![image info](https://github.com/jeremytenjo/install-npm-package/blob/master/assets/videos/demo.gif?raw=true)
+![image info](https://github.com/jeremytenjo/search-google/blob/master/assets/videos/demo.gif?raw=true)

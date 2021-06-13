@@ -1,9 +1,9 @@
 {
-	"name": "install-npm-package",
-	"displayName": "Install NPM packages",
-	"description": "Install NPM packages quickly",
+	"name": "search-google",
+	"displayName": "Search Google",
+	"description": "Search google quickly",
 	"publisher": "tenjojeremy",
-	"version": "0.1.0",
+	"version": "0.5.0",
 	"engines": {
 		"vscode": "^1.55.0"
 	},
@@ -11,8 +11,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:installNPMPackage.installNPMPackage",
-		"onCommand:installNPMPackage.uninstallNPMPackage"
+		"onCommand:searchGoogle.searchGoogle"
 	],
 	"main": "./src/index.js",
 	"scripts": {
@@ -25,17 +24,13 @@
 	"icon": "assets/images/logo.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jeremytenjo/install-npm-package"
+		"url": "https://github.com/jeremytenjo/search-google"
 	},
 	"contributes": {
 		"commands": [
 			{
-				"command": "installNPMPackage.installNPMPackage",
-				"title": "Install NPM packages"
-			},
-			{
-				"command": "installNPMPackage.uninstallNPMPackage",
-				"title": "Uninstall NPM packages"
+				"command": "searchGoogle.searchGoogle",
+				"title": "Search Google"
 			}
 		]
 	},
