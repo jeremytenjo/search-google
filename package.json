@@ -11,7 +11,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:installNPMPackage.installNPMPackage"
+		"onCommand:installNPMPackage.installNPMPackage",
+		"onCommand:installNPMPackage.uninstallNPMPackage"
 	],
 	"main": "./src/index.js",
 	"scripts": {
@@ -31,6 +32,10 @@
 			{
 				"command": "installNPMPackage.installNPMPackage",
 				"title": "Install NPM packages"
+			},
+			{
+				"command": "installNPMPackage.uninstallNPMPackage",
+				"title": "Uninstall NPM packages"
 			}
 		]
 	},

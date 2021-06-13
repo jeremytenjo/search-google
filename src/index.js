@@ -1,5 +1,5 @@
 const vscode = require('vscode')
-const handleRequestToSearch = require('./handleRequestToSearch')
+const handleInstallNpmPackage = require('../utils/handleNpmPackage')
 const pkgJson = require('../package.json')
 
 /**
@@ -7,10 +7,17 @@ const pkgJson = require('../package.json')
  */
 function activate(context) {
   console.log(`${pkgJson.name} activated!`)
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand('installNPMPackage.installNPMPackage', () =>
+      handleInstallNpmPackage({ action: 'install' })
+    )
+  )
+
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      'installNPMPackage.installNPMPackage',
-      handleRequestToSearch
+      'installNPMPackage.uninstallNPMPackage',
+      () => handleInstallNpmPackage({ action: 'uninstall' })
     )
   )
 }
